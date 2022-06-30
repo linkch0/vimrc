@@ -5,16 +5,25 @@ set shortmess+=I
 " Enable mouse support.
 " set mouse+=a
 
-" Syntax highlighting.
+" Syntax highlighting, use one half theme
 syntax on
+set t_Co=256
+set background=light
+" 突出显示当前行
+set cursorline
+colorscheme onehalflight
+let g:airline_theme='onehalfdark'
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 " Load indentation rules and plugins.
 filetype plugin indent on
-
 " Show relative line numbers.
 set number
 set relativenumber
-" 突出显示当前行
-set cursorline
 " 打开状态栏标尺
 set ruler
 " 设定命令行的行数为 1
@@ -76,5 +85,8 @@ set foldcolumn=0
 " 设置折叠层数为 1
 setlocal foldlevel=1
 
-set background=light
-colorscheme solarized
+" set the menu & the message to English
+set langmenu=en_US
+let $LANG='en_US'
+" source $VIMRUNTIME/delmenu.vim
+" source $VIMRUNTIME/menu.vim
