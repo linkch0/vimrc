@@ -23,7 +23,7 @@ endif
 filetype plugin indent on
 " Show relative line numbers.
 set number
-set relativenumber
+" set relativenumber
 " 打开状态栏标尺
 set ruler
 " 设定命令行的行数为 1
@@ -88,5 +88,3 @@ setlocal foldlevel=1
 " set the menu & the message to English
 set langmenu=en_US
 let $LANG='en_US'
-" source $VIMRUNTIME/delmenu.vim
-" source $VIMRUNTIME/menu.vim
