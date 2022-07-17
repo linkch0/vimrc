@@ -16,11 +16,6 @@ nnoremap <Down>  :echoe "Use j"<CR>
 " inoremap <Up>    <ESC>:echoe "Use k"<CR>
 " inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
-" CtrlP Plugin https://github.com/ctrlpvim/ctrlp.vim
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
-
 " NERDTree Plugin https://github.com/scrooloose/nerdtree
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
@@ -44,5 +39,6 @@ map <Leader>l <Plug>(easymotion-lineforward)
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
-" keep cursor column when JK motion
-let g:EasyMotion_startofline = 0
+
+" YouCompleteMe https://github.com/ycm-core/YouCompleteMe
+nmap <C-k><C-d> :YcmCompleter Format<CR>
