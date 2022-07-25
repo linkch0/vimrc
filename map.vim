@@ -1,5 +1,17 @@
 " 用Space键来开关折叠
 nnoremap <Space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
+map ; :
+" noremap ;; ;
+
+" quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" change window size more quickly
+nnoremap <silent> <Leader>= :exe "resize " . (winheight(0) * 3/2)<CR>
+nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 
 " Unbind some useless/annoying default key bindings.
 " 'Q' in normal mode enters Ex mode. You almost never want this.
@@ -17,7 +29,7 @@ nnoremap <Down>  :echoe "Use j"<CR>
 " inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 " NERDTree Plugin https://github.com/scrooloose/nerdtree
-nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <Leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
@@ -42,3 +54,9 @@ map <Leader>h <Plug>(easymotion-linebackward)
 
 " YouCompleteMe https://github.com/ycm-core/YouCompleteMe
 nmap <C-k><C-d> :YcmCompleter Format<CR>
+nmap <Leader>q <Plug>(YCMHover)
+nmap <F12> :YcmCompleter GoToDefinition<CR>
+nmap <S-F12> :YcmCompleter GoToReferences<CR>
+
+" vim-oscyank https://github.com/ojroques/vim-oscyank 
+vnoremap <leader>c :OSCYank<CR>

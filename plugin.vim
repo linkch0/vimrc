@@ -6,6 +6,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'preservim/nerdcommenter'
+Plug 'ojroques/vim-oscyank', {'branch': 'main'}
+Plug 'LunarWatcher/auto-pairs'
 call plug#end()
 
 " CtrlP Plugin https://github.com/ctrlpvim/ctrlp.vim
@@ -26,4 +29,23 @@ let g:ycm_error_symbol = 'xx'
 let g:ycm_warning_symbol = '!!'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_auto_hover = ''
 autocmd BufWritePre *.c,*.cpp,*.h :YcmCompleter Format
+
+" nerdcommenter https://github.com/preservim/nerdcommenter
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+let g:NERDCommentEmptyLines = 1
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
+
+" auto-pairs https://github.com/LunarWatcher/auto-pairs
+let g:AutoPairsMapBS = 1

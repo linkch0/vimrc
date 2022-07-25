@@ -88,3 +88,8 @@ setlocal foldlevel=1
 " set the menu & the message to English
 set langmenu=en_US
 let $LANG='en_US'
+
+" open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
+
