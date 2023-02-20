@@ -52,11 +52,11 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 map <Leader>h <Plug>(easymotion-linebackward)
 
-" YouCompleteMe https://github.com/ycm-core/YouCompleteMe
-nmap <C-k><C-d> :YcmCompleter Format<CR>
-nmap <Leader>q <Plug>(YCMHover)
-nmap <F12> :YcmCompleter GoToDefinition<CR>
-nmap <S-F12> :YcmCompleter GoToReferences<CR>
+" " YouCompleteMe https://github.com/ycm-core/YouCompleteMe
+" nmap <C-k><C-d> :YcmCompleter Format<CR>
+" nmap <Leader>q <Plug>(YCMHover)
+" nmap <F12> :YcmCompleter GoToDefinition<CR>
+" nmap <S-F12> :YcmCompleter GoToReferences<CR>
 
 " vim-oscyank https://github.com/ojroques/vim-oscyank 
 vnoremap <leader>c :OSCYank<CR>

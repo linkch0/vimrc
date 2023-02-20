@@ -5,7 +5,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 Plug 'preservim/nerdcommenter'
 Plug 'ojroques/vim-oscyank', {'branch': 'main'}
 Plug 'LunarWatcher/auto-pairs'
@@ -20,17 +20,19 @@ let g:ctrlp_working_path_mode = 'ra'
 " keep cursor column when JK motion
 let g:EasyMotion_startofline = 0
 
-" YouCompleteMe https://github.com/ycm-core/YouCompleteMe
-let g:ycm_server_python_interpreter = '/usr/bin/python3'
-" let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf = 0
-" let g:ycm_show_diagnostics_ui = 0
-let g:ycm_error_symbol = 'xx'
-let g:ycm_warning_symbol = '!!'
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_auto_hover = ''
-autocmd BufWritePre *.c,*.cpp,*.h :YcmCompleter Format
+" " YouCompleteMe https://github.com/ycm-core/YouCompleteMe
+" let g:ycm_server_python_interpreter = '/Users/link/miniconda3/bin/python3'
+" " Use homebrew's clangd
+" let g:ycm_clangd_binary_path = trim(system('brew --prefix llvm')).'/bin/clangd'
+" " let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/YouCompleteMe/.ycm_extra_conf.py'
+" let g:ycm_confirm_extra_conf = 0
+" " let g:ycm_show_diagnostics_ui = 0
+" let g:ycm_error_symbol = 'xx'
+" let g:ycm_warning_symbol = '!!'
+" let g:ycm_autoclose_preview_window_after_insertion = 1
+" let g:ycm_autoclose_preview_window_after_completion = 1
+" let g:ycm_auto_hover = ''
+" autocmd BufWritePre *.c,*.cpp,*.h :YcmCompleter Format
 
 " nerdcommenter https://github.com/preservim/nerdcommenter
 " Create default mappings

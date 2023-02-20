@@ -34,9 +34,10 @@
     :source ~/.vimrc
     ```
  
-    Install clang completer
+    Deprecated
 
-    ```shell
-    cd ~/.vim/plugged/YouCompleteMe
-    python3 install.py --clangd-completer
-    ```
+    <!-- Install clang completer -->
+    <!-- ```shell -->
+    <!-- cd ~/.vim/plugged/YouCompleteMe -->
+    <!-- python3 install.py --clangd-completer -->
+    <!-- ``` -->
