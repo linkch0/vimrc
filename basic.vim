@@ -61,6 +61,9 @@ set shiftwidth=4
 set softtabstop=4
 " 设定 tab 长度为 4
 set tabstop=4
+" 把插入的 tab 字符替换成tabstop的空格
+set expandtab
+
 " 开启新行时使用智能自动缩进
 set smartindent
 " 不设定在插入状态无法用退格键和 Delete 键删除回车符

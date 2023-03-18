@@ -9,6 +9,7 @@ Plug 'mileszs/ack.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'ojroques/vim-oscyank', {'branch': 'main'}
 Plug 'LunarWatcher/auto-pairs'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 " CtrlP Plugin https://github.com/ctrlpvim/ctrlp.vim
