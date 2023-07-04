@@ -59,4 +59,7 @@ map <Leader>h <Plug>(easymotion-linebackward)
 " nmap <S-F12> :YcmCompleter GoToReferences<CR>
 
 " vim-oscyank https://github.com/ojroques/vim-oscyank 
-vnoremap <leader>c :OSCYank<CR>
+nmap <leader>c <Plug>OSCYankOperator
+nmap <leader>cc <leader>c_
+vmap <leader>c <Plug>OSCYankVisual
+
