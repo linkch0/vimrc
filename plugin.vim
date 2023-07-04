@@ -5,11 +5,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
-" Plug 'ycm-core/YouCompleteMe'
 Plug 'preservim/nerdcommenter'
 Plug 'ojroques/vim-oscyank', {'branch': 'main'}
-Plug 'LunarWatcher/auto-pairs'
 Plug 'tpope/vim-surround'
+" Plug 'LunarWatcher/auto-pairs'
+" Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 " CtrlP Plugin https://github.com/ctrlpvim/ctrlp.vim
@@ -51,4 +51,4 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
 " auto-pairs https://github.com/LunarWatcher/auto-pairs
-let g:AutoPairsMapBS = 1
+" let g:AutoPairsMapBS = 1
