@@ -60,6 +60,6 @@ map <Leader>h <Plug>(easymotion-linebackward)
 
 " vim-oscyank https://github.com/ojroques/vim-oscyank 
 nmap <leader>c <Plug>OSCYankOperator
-nmap <leader>cc <leader>c_
+" Copy current line in normal mode: <leader>c_
 vmap <leader>c <Plug>OSCYankVisual
 

@@ -11,8 +11,12 @@ set t_Co=256
 set background=light
 " 突出显示当前行
 set cursorline
+" Light scheme
 colorscheme onehalflight
-let g:airline_theme='onehalfdark'
+let g:airline_theme='onehalflight'
+" Dark scheme
+" colorscheme onehalfdark
+" let g:airline_theme='onehalfdark'
 if exists('+termguicolors')
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
