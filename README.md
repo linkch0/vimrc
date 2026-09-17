@@ -10,7 +10,7 @@
 
 2. Edit and paste in `~/.vimrc`:
 
-    ```
+    ```plaintext
     set runtimepath+=~/.vimrcs
     source ~/.vimrcs/plugin.vim
     source ~/.vimrcs/basic.vim
@@ -19,7 +19,7 @@
 
 3. Install plugins in vim:
 
-    ```
+    ```plaintext
     :PlugInstall
     :source ~/.vimrc
     ```
